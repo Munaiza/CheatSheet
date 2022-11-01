@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Cheatsheet</title>
+
+</head>
+<body>
+    <h1>HTML SELECTOR CHEASTSHEET</h1>
+  
+            <h2>Basic Selectors</h2>
+        <table>
+            <thead>
+                <th>Selector</th>
+                <th>Example</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+        <tr>
+            <td>elementName</td>
+            <td>p</td>
+            <td>Selects all &ltp&gt; elements</td>
+
+        </tr>
+        <tr>
+            <td>.class</td>
+            <td>.intro</td>
+            <td>select elements with class ="intro"</td>
+        </tr>
+        <tr>
+            <td>#id</td>
+            <td>#firstname</td>
+            <td>Selects the element with id="firstname"</td>
+        </tr>
+        <tr>
+            <td>[attr=value]</td>
+            <td>[target=_blank]</td>
+            <td>Selects all elements with target="_blank"</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>*</td>
+            <td>selects all HTML elements on the page</td>
+        </tr>
+    </tbody>
+    </table>
+    
+        
+            <h2>Combinators</h2>
+    <table> 
+        <thead>
+        
+            <th>Selector</th>
+            <th>Example</th>
+            <th>Description</th>
+        </thead>
+        <tbody>     
+        <tr>
+            <td>selectorA + selectorB </td>
+            <td>div + p</td>
+            <td>Selects the first &ltp&gt; element that are placed immediately after <div> elements</td>
+        </tr>
+        <tr>
+            <td>selectorA ~ selectorB</td>
+            <td>p ~ ul</td>
+            <td>Selects every &ltul&gt; element that are preceded by a &ltp&gt; element</td>
+        </tr>
+        <tr>
+            <td>parent > child</td>
+            <td>div > p</td>
+            <td>Selects all &ltp&gt; elements where the parent is a &ltdiv&gt; element</td>
+        </tr>
+        <tr>
+            <td>parent descendent</td>
+            <td>div p</td>
+            <td>Selects all &ltp&gt; elements inside &ltdiv&gt; elements</td>
+        </tr>
+    </tbody>
+    </table>
+        
+            <h2>Pseudo Selectors</h2>
+    <table>
+        <thead>
+            <th>Selector</th>
+            <th>Example</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>:active</td>
+            <td>a:active</td>
+            <td>Selects the active link</td>
+        </tr>
+        <tr>
+            <td>:hover</td>
+            <td>a:hover</td>
+            <td>Selects links on mouse over</td>
+        </tr>
+        <tr>
+            <td>:visited</td>
+            <td>a:visited</td>
+            <td>Selects all visited links</td>
+        </tr>
+        <tr>
+            <td>:focus</td>
+            <td>input:focus</td>
+            <td>Selects the &ltinput&gt element that has focus</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
